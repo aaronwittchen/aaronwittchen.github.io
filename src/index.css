@@ -133,9 +133,19 @@ body {
   top: 0px;
   right: 0px;
   padding: 0;
-  cursor: default;
+  cursor: default; /* Default cursor for larger devices */
   line-height: 0px;
   user-select: none; /* Prevent selection of close button */
+}
+
+/* Media query for small devices (e.g., phones) */
+@media (max-width: 767px) {
+  .close-button {
+    cursor: pointer; /* Pointer cursor for small devices */
+  }
+  .minimize-button {
+    cursor: pointer;
+  }
 }
 
 .minimize-button {
