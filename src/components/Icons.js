@@ -58,6 +58,6 @@ export const ArtFolderIcon = ({ isArtOpen }) => {
 
 export const File = () => {
   return (
-    <img src="./images/File.png" alt="File Icon" className="folder-icon" />
+    <img src="./images/file.png" alt="File Icon" className="folder-icon" />
   );
 };

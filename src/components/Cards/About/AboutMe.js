@@ -11,12 +11,10 @@ const AboutMe = () => {
 # Hello 
 
 I'm LocalOnionSeller, or Onion for short, but I'm known by many names, and this is my website.  
-A half German, half Russian, being very silly.  
 
 I studied computer science and mathematics in Germany, and I'm currently trying to make it as a software engineer.
 
 I like to [work on coding projects](#) , [write down my thoughts](#) , and [make generative art](#).
-AND SELL ONIONS!!!!!!!!!
 
 ![Thumbnail Image](./images/thumbnail-gray.png)
 

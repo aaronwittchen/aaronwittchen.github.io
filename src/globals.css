@@ -6,8 +6,14 @@ body {
   background-color: #151515;
   color: #eee;
   font-family: 'Source Sans Pro', sans-serif;
-  overflow: hidden;
+  overflow: visible;
   user-select: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 #container {
