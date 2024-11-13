@@ -5,9 +5,9 @@
   background-color: #151515;
   display: flex;
   flex-direction: column;
-  height: 70px; /* Keep height as is */
-  justify-content: flex-start; /* Align text to the top */
-  padding-top: 17px; /* Increase top padding */
+  height: 70px;
+  justify-content: flex-start;
+  padding-top: 17px;
   width: 100%;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import '../../../index.css';
+import '../../../globals.css';
 
 const renderers = {
   img: ({ src, alt }) => <img src={src} alt={alt} width="200" height="200" />,
@@ -10,15 +10,21 @@ const AboutMe = () => {
   const markdownContent = `
 # Hello 
 
-I'm Onion, and this is my website. I studied computer science and mathematics at MIT, and currently work as a software engineer in Cambridge, MA.
+I'm LocalOnionSeller, or Onion for short, but I'm known by many names, and this is my website.  
+A half German, half Russian, being very silly.  
 
-I like to [make music](link-to-your-music) , [write software](link-to-your-software) , and [do stuff with paper](link-to-your-paper).
+I studied computer science and mathematics in Germany, and I'm currently trying to make it as a software engineer.
 
-![Thumbnail Image](/images/thumbnail-gray.png)
+I like to [work on coding projects](#) , [write down my thoughts](#) , and [make generative art](#).
+AND SELL ONIONS!!!!!!!!!
 
-You can email me [here](mailto:your-email@example.com).
+![Thumbnail Image](./images/thumbnail-gray.png)
 
-My CV is [here](link-to-your-cv).
+My Discord: localonionseller (send me pics of your pets)  
+My Matrix: [localonionseller](https://matrix.to/#/@localonionseller:matrix.org) (i wont answer)(probably)  
+My Mastodon: [localonionseller](https://mstdn.social/@localonionseller)  
+
+I also [rate music](https://www.albumoftheyear.org/user/onionseller)
 `;
 
   return (

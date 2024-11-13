@@ -1,7 +1,7 @@
 {
-  "name": "yeah",
-  "homepage": "https://onionseller.github.io/justtesting",
-  "version": "0.1.0",
+  "name": "personal-website",
+  "homepage": ".",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@dantecoder/react-resizablebox": "^2.2.0",

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import '../../../index.css';
+import '../../../globals.css';
 
 const Mountain = () => {
   const videoRef = useRef(null);

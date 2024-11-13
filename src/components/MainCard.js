@@ -3,14 +3,16 @@ import { Rnd } from 'react-rnd';
 import AboutMe from './Cards/About/AboutMe';
 import AboutThisWebsite from './Cards/About/AboutThisWebsite';
 import Him from './Cards/About/Him';
-import FirstPost from './Cards/Posts/FirstPost.js';
+import Hon from './Cards/About/Hon';
+import ProgressReports from './Cards/Posts/ProgressReports.js';
 import Planet from './Cards/Art/Planet';
 import MercuryCrystals from './Cards/Art/MercuryCrystals';
 import Flow from './Cards/Art/Flow';
 import Spring from './Cards/Art/Spring';
 import Music from './Cards/Music/Music';
 import Mountain from './Cards/Art/Mountain';
-import '../index.css';
+import Tree from './Cards/Art/Tree';
+import '../globals.css';
 import { getResizeConfig } from './resizingConfig.ts';
 import {
   AboutFolderIcon,
@@ -143,11 +145,9 @@ const MainCard = () => {
             zIndex: activeCardId === card.id ? 15 : 1,
             position: 'absolute',
             border: '2px solid #eee',
-            minWidth: '200px',
-            maxWidth: '400px',
             padding: '0',
           }}
-          bounds="#container"
+          bounds="window"
           onClick={() => handleCardClick(card.id)}
           onDragStart={() => handleDragStart(card.id)}
           dragHandleClassName="card-navbar"
@@ -168,6 +168,7 @@ const MainCard = () => {
               <button
                 className="minimize-button"
                 onClick={() => toggleMinimizeCard(card.id)}
+                onTouchStart={() => toggleMinimizeCard(card.id)}
                 style={
                   card.type !== 'main'
                     ? {
@@ -184,6 +185,7 @@ const MainCard = () => {
                 <button
                   className="close-button"
                   onClick={() => handleCloseCard(card.id)}
+                  onTouchStart={() => handleCloseCard(card.id)}
                 >
                   x
                 </button>
@@ -245,6 +247,15 @@ const MainCard = () => {
                             Him
                           </button>
                         </div>
+                        <div className="content-item about-details">
+                          <File />
+                          <button
+                            className="folder-button"
+                            onClick={() => createNewCard('Hon')}
+                          >
+                            Hon
+                          </button>
+                        </div>
                       </>
                     )}
 
@@ -265,9 +276,9 @@ const MainCard = () => {
                             <File />
                             <button
                               className="folder-button"
-                              onClick={() => createNewCard('First Post')}
+                              onClick={() => createNewCard('Progress-Reports')}
                             >
-                              First Post
+                              Progress-Reports
                             </button>
                           </div>
                         )}
@@ -359,6 +370,15 @@ const MainCard = () => {
                                 Mountain
                               </button>
                             </div>
+                            <div className="content-item about-details">
+                              <File />
+                              <button
+                                className="folder-button"
+                                onClick={() => createNewCard('Tree')}
+                              >
+                                Tree
+                              </button>
+                            </div>
                           </>
                         )}
                       </>
@@ -368,13 +388,15 @@ const MainCard = () => {
                 {card.type === 'About Me' && <AboutMe />}
                 {card.type === 'About This Website' && <AboutThisWebsite />}
                 {card.type === 'Him' && <Him />}
+                {card.type === 'Hon' && <Hon />}
                 {card.type === 'Planet' && <Planet />}
                 {card.type === 'Mercury Crystals' && <MercuryCrystals />}
                 {card.type === 'Flow' && <Flow />}
                 {card.type === 'Mountain' && <Mountain />}
                 {card.type === 'Spring' && <Spring />}
                 {card.type === 'Music' && <Music />}
-                {card.type === 'First Post' && <FirstPost />}
+                {card.type === 'Progress-Reports' && <ProgressReports />}
+                {card.type === 'Tree' && <Tree />}
               </div>
             )}
           </div>

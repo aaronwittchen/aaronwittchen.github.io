@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import '../../../index.css';
+import '../../../globals.css';
 
 const renderers = {
   img: ({ src, alt }) => <img src={src} alt={alt} width="400" height="400" />,

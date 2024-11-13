@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import '../../../index.css';
+import '../../../globals.css';
 
 const renderers = {
   img: ({ src, alt }) => (
@@ -16,7 +16,7 @@ const renderers = {
 
 const AboutMe = () => {
   const markdownContent = `
-![Thumbnail Image](/images/pink.png)
+![Him](/images/pink.png)
 `;
 
   return (
