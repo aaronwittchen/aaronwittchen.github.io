@@ -30,7 +30,7 @@ const Flow = () => {
           style={{ width: '100%', height: 'auto' }}
           loop
         >
-          <source src="images/flow.mp4" type="video/mp4" />
+          <source src="images/Flow.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

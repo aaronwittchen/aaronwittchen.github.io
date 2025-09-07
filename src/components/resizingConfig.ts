@@ -4,13 +4,13 @@ export const getResizeConfig = (cardType) => {
   }
 
   return {
-    top: false,
-    bottom: false,
+    top: true,
+    bottom: true,
     left: true,
     right: true,
-    topLeft: false,
-    topRight: false,
-    bottomLeft: false,
-    bottomRight: false,
+    topLeft: true,
+    topRight: true,
+    bottomLeft: true,
+    bottomRight: true,
   };
 };

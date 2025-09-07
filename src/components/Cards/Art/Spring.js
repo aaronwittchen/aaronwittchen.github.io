@@ -29,7 +29,7 @@ const Spring = () => {
           style={{ width: '100%', height: 'auto' }}
           loop
         >
-          <source src="images/spring.mp4" type="video/mp4" />
+          <source src="images/Spring.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

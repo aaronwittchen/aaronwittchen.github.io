@@ -4,8 +4,8 @@ export const RootFolderIcon = ({ isRootOpen }) => {
   return (
     <img
       src={isRootOpen ? './images/openFolder.png' : './images/closedFolder.png'}
-      alt="Folder Icon"
-      className="folder-icon"
+      alt='Folder Icon'
+      className='folder-icon'
     />
   );
 };
@@ -13,11 +13,9 @@ export const RootFolderIcon = ({ isRootOpen }) => {
 export const AboutFolderIcon = ({ isAboutOpen }) => {
   return (
     <img
-      src={
-        isAboutOpen ? './images/openFolder.png' : './images/closedFolder.png'
-      }
-      alt="Folder Icon"
-      className="folder-icon"
+      src={isAboutOpen ? '/images/openFolder.png' : '/images/closedFolder.png'}
+      alt='Folder Icon'
+      className='folder-icon'
     />
   );
 };
@@ -25,23 +23,21 @@ export const AboutFolderIcon = ({ isAboutOpen }) => {
 export const PostFolderIcon = ({ isPostsOpen }) => {
   return (
     <img
-      src={
-        isPostsOpen ? './images/openFolder.png' : './images/closedFolder.png'
-      }
-      alt="Folder Icon"
-      className="folder-icon"
+      src={isPostsOpen ? '/images/openFolder.png' : '/images/closedFolder.png'}
+      alt='Folder Icon'
+      className='folder-icon'
     />
   );
 };
 
-export const MusicFolderIcon = ({ isMusicOpen }) => {
+export const ProjectsFolderIcon = ({ isProjectsOpen }) => {
   return (
     <img
       src={
-        isMusicOpen ? './images/openFolder.png' : './images/closedFolder.png'
+        isProjectsOpen ? '/images/openFolder.png' : '/images/closedFolder.png'
       }
-      alt="Folder Icon"
-      className="folder-icon"
+      alt='Folder Icon'
+      className='folder-icon'
     />
   );
 };
@@ -49,15 +45,13 @@ export const MusicFolderIcon = ({ isMusicOpen }) => {
 export const ArtFolderIcon = ({ isArtOpen }) => {
   return (
     <img
-      src={isArtOpen ? './images/openFolder.png' : './images/closedFolder.png'}
-      alt="Folder Icon"
-      className="folder-icon"
+      src={isArtOpen ? '/images/openFolder.png' : '/images/closedFolder.png'}
+      alt='Folder Icon'
+      className='folder-icon'
     />
   );
 };
 
 export const File = () => {
-  return (
-    <img src="./images/file.png" alt="File Icon" className="folder-icon" />
-  );
+  return <img src='/images/file.png' alt='File Icon' className='folder-icon' />;
 };

@@ -31,12 +31,12 @@ const ProgressReports = () => {
   return (
     <div style={{ width: '100%', height: '100%' }}>
       <div
-        className="card-content"
+        className='card-content'
         style={{
           marginTop: '-30px',
           marginLeft: '-30px',
           marginRight: '-30px',
-          marginBottom: '-10px',
+          marginBottom: '-20px', // '-10px'
         }}
       >
         <ReactMarkdown>{currentContent}</ReactMarkdown>
@@ -47,6 +47,7 @@ const ProgressReports = () => {
           justifyContent: 'space-between',
         }}
       >
+        {/* 
         <button className="progress-button" onClick={previousContent}>
           Previous
         </button>
@@ -54,6 +55,7 @@ const ProgressReports = () => {
         <button className="progress-button" onClick={nextContent}>
           Next
         </button>
+        */}
       </div>
     </div>
   );
