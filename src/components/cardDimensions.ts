@@ -17,7 +17,7 @@ export const getCardDimensions = (cardType: string): CardDimensions => {
     Invoicipedia: { width: '1000px', height: '1100px' },
     NeoWsTrackingApplication: { width: '1000px', height: '1100px' },
     MERNJWTAuth: { width: '1000px', height: '1100px' },
-    TicketBuyingSystem: { width: '1200px', height: '1100px' },
+    TicketBookingSystem: { width: '1200px', height: '1100px' },
     'Understanding Microservices: Benefits, Use Cases, and Common Pitfalls': {
       width: '1000px',
       height: '1100px',

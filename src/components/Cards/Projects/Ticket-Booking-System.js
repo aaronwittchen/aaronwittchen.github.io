@@ -5,14 +5,14 @@ import '../../../globals.css';
 const renderers = {
   img: ({ src, alt }) => <img src={src} alt={alt} width='1100' height='350' />,
   a: ({ href, children }) => (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target='_blank' rel='noopener noreferrer'>
       {children}
     </a>
   ),
   span: ({ style, children }) => <span style={style}>{children}</span>,
 };
 
-const TicketBuyingSystem = () => {
+const TicketBookingSystem = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -21,13 +21,13 @@ const TicketBuyingSystem = () => {
   }, []);
 
   const markdownContent1 = `
-# Ticket Buying System
+# Ticket Booking System
 `;
 
   const markdownContent2 = `
-**Ticket Buying System is a microservices-based ticket booking application** designed to handle event inventory management, ticket booking, and order processing. Built with Java 17 and Spring Boot 3, the system uses MySQL for persistence, Apache Kafka for event-driven communication, and Keycloak for OAuth2 JWT authentication. Metrics and monitoring are integrated using Prometheus and Grafana for visualization.
+**Ticket Booking System is a microservices-based ticket booking application** designed to handle event inventory management, ticket booking, and order processing. Built with Java 17 and Spring Boot 3, the system uses MySQL for persistence, Apache Kafka for event-driven communication, and Keycloak for OAuth2 JWT authentication. Metrics and monitoring are integrated using Prometheus and Grafana for visualization.
 
-**Available on [Github](https://github.com/aaronwittchen/Ticket-Buying-System)**
+**Available on [Github](https://github.com/aaronwittchen/Ticket-Booking-System)**
 
 ![Ticket Buying System Diagram](/images/TicketBuyingSystemDiagram.png)
 `;
@@ -58,7 +58,8 @@ Centralized API documentation is accessible via the API Gateway, with individual
         <ReactMarkdown components={renderers}>{markdownContent1}</ReactMarkdown>
         <div style={{ marginTop: '10px', marginBottom: '15px' }}>
           <span style={{ fontSize: '14px', color: '#d3869b' }}>
-            java, springboot, kafka, mySQL, prometheus, grafana, keycloak, microservices
+            java, springboot, kafka, mySQL, prometheus, grafana, keycloak,
+            microservices
           </span>
         </div>
         <ReactMarkdown components={renderers}>{markdownContent2}</ReactMarkdown>
@@ -78,4 +79,4 @@ Centralized API documentation is accessible via the API Gateway, with individual
   );
 };
 
-export default TicketBuyingSystem;
+export default TicketBookingSystem;

@@ -16,7 +16,7 @@ import Tree from './Cards/Art/Tree';
 import Invoicipedia from './Cards/Projects/Invoicipedia';
 import NeoWsTrackingApplication from './Cards/Projects/NeoWs-Tracking-Application';
 import MERNJWTAuth from './Cards/Projects/MERN-JWT-Auth';
-import TicketBuyingSystem from './Cards/Projects/Ticket-Buying-System';
+import TicketBookingSystem from './Cards/Projects/Ticket-Booking-System';
 import '../globals.css';
 import { getResizeConfig } from './resizingConfig.ts';
 import { getCardDimensions } from './cardDimensions.ts';
@@ -352,7 +352,9 @@ const MainCard = () => {
                               <button
                                 className='folder-button'
                                 onClick={() =>
-                                  createNewCard('Building Micrograd: A Minimal Autograd Engine')
+                                  createNewCard(
+                                    'Building Micrograd: A Minimal Autograd Engine'
+                                  )
                                 }
                               >
                                 Building Micrograd
@@ -392,7 +394,9 @@ const MainCard = () => {
                               <File />
                               <button
                                 className='folder-button'
-                                onClick={() => createNewCard('Sorting Visualization Tool')}
+                                onClick={() =>
+                                  createNewCard('Sorting Visualization Tool')
+                                }
                               >
                                 Sorting Visualization Tool
                               </button>{' '}
@@ -410,7 +414,9 @@ const MainCard = () => {
                               <File />
                               <button
                                 className='folder-button'
-                                onClick={() => createNewCard('NeoWsTrackingApplication')}
+                                onClick={() =>
+                                  createNewCard('NeoWsTrackingApplication')
+                                }
                               >
                                 NeoWs Tracking Application
                               </button>
@@ -428,9 +434,11 @@ const MainCard = () => {
                               <File />
                               <button
                                 className='folder-button'
-                                onClick={() => createNewCard('TicketBuyingSystem')}
+                                onClick={() =>
+                                  createNewCard('TicketBookingSystem')
+                                }
                               >
-                                Ticket Buying System
+                                Ticket Booking System
                               </button>
                             </div>
                           </div>
@@ -517,15 +525,27 @@ const MainCard = () => {
                 {card.type === 'Flow' && <Flow />}
                 {card.type === 'Mountain' && <Mountain />}
                 {card.type === 'Spring' && <Spring />}
-                {card.type === 'Sorting Visualization Tool' && <SortingVisualizationTool />}
+                {card.type === 'Sorting Visualization Tool' && (
+                  <SortingVisualizationTool />
+                )}
                 {card.type === 'Invoicipedia' && <Invoicipedia />}
-                {card.type === 'NeoWsTrackingApplication' && <NeoWsTrackingApplication />}
+                {card.type === 'NeoWsTrackingApplication' && (
+                  <NeoWsTrackingApplication />
+                )}
                 {card.type === 'MERNJWTAuth' && <MERNJWTAuth />}
-                {card.type === 'TicketBuyingSystem' && <TicketBuyingSystem />}
+                {card.type === 'TicketBookingSystem' && <TicketBookingSystem />}
                 {card.type === 'Progress-Reports' && <ProgressReports />}
-                {card.type === 'Understanding Microservices: Benefits, Use Cases, and Common Pitfalls' && <Microservices />}
-                {card.type === 'Building Micrograd: A Minimal Autograd Engine' && <BuildingMicrograd />}
-                {card.type === 'Apache Kafka Global Overview' && <ApacheKafkaGlobalOverview />}
+                {card.type ===
+                  'Understanding Microservices: Benefits, Use Cases, and Common Pitfalls' && (
+                  <Microservices />
+                )}
+                {card.type ===
+                  'Building Micrograd: A Minimal Autograd Engine' && (
+                  <BuildingMicrograd />
+                )}
+                {card.type === 'Apache Kafka Global Overview' && (
+                  <ApacheKafkaGlobalOverview />
+                )}
                 {card.type === 'Tree' && <Tree />}
               </div>
             )}
